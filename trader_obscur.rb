@@ -7,7 +7,7 @@ PAGE_URL = "https://coinmarketcap.com/all/views/all/"
 page = Nokogiri::HTML(open(PAGE_URL))
 i=0
 array_cours=[]
-cours = page.xpath('//td[5]/a')#'/a')#[@class="price"]')
+cours = page.xpath('//td[5]/a')
 currency=page.xpath('//td[2]/a')
 while i<3
     register={}
