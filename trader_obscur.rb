@@ -25,7 +25,7 @@ while true
 
     array_cours << register     #on balance tout ça dans un array
 
-    #Je puts seulement la dernière case de mon array au lieu de surcharger la console avec un puts array_cours qui va me renvoyer l'historique à chaque heure
+    #Je puts seulement la dernière case de mon array (cours à instant T) au lieu de surcharger la console avec un puts array_cours qui va me renvoyer l'historique + cours à instant T
     puts array_cours[array_cours.length-1]
     sleep(3600)
 end
